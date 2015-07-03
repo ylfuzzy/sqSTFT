@@ -7,6 +7,8 @@ threadsafe: true
 handlers:
 - url: .*
   script: myproject.wsgi.application
+- url: /myproject/templates/hello
+  static_dir: /myproject/templates/hello
 
 libraries:
 - name: django
